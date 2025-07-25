@@ -7,8 +7,6 @@ from .pyelog import (
     ElogAuthenticationError,
     ElogSubmissionError,
     ElogRetrievalError,
-    submit_entry,
-    retrieve_entry
 )
 
 """PyElog - Python ELOG Client Library
@@ -25,7 +23,5 @@ __all__ = [
     "ElogConnectionError",
     "ElogAuthenticationError",
     "ElogSubmissionError",
-    "ElogRetrievalError",
-    "submit_entry",
-    "retrieve_entry"
+    "ElogRetrievalError"
 ]
