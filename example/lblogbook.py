@@ -1,8 +1,8 @@
 from typing import BinaryIO, Optional, Sequence, Tuple, Union
-
+from pyelog import ElogClient
 import os
-USERNAME = os.getenv("PYELOG_USERNAME", "common")
-PASSWORD = os.getenv("PYELOG_PASSWORD", "Common!")
+USERNAME = os.getenv("PYELOG_USERNAME", "default_user")
+PASSWORD = os.getenv("PYELOG_PASSWORD", "default_password")
 SERVER = os.getenv("PYELOG_SERVER", "localhost")
 PORT = int(os.getenv("PYELOG_PORT", 8080))
 client = ElogClient(
